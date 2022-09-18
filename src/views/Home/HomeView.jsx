@@ -3,7 +3,7 @@ import React from "react"
 function HomeView() {
 
     return (
-        <div>test</div>
+        <div>home</div>
     )
 }
 
