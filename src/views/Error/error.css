@@ -1,0 +1,23 @@
+.error {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #FF6060;
+}
+
+.error--title {
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 411px;
+    margin: 0;
+}
+
+.error--subtitle {
+    font-size: 36px;
+    line-height: 51px;
+}
+
+.error--return {
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration-line: underline;
+}
