@@ -1,9 +1,10 @@
 import React from "react"
+import Header from "../../components/Header/Header";
 
 function AboutView() {
 
     return (
-        <div>test</div>
+        <Header aboutView={true}/>
     )
 }
 

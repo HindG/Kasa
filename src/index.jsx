@@ -4,6 +4,7 @@ import HomeView from "./views/Home/HomeView";
 import AboutView from "./views/About/AboutView";
 import AccomodationView from "./views/Accomodation/AccomodationView";
 import ErrorView from "./views/Error/ErrorView";
+import "./index.css"
 
 
 export default function App() {
