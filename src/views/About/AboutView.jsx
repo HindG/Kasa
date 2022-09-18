@@ -1,10 +1,14 @@
-import React from "react"
+import React, { Fragment } from "react"
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 function AboutView() {
 
     return (
-        <Header aboutView={true}/>
+        <Fragment>
+            <Header aboutView={true} />
+            <Footer />
+        </Fragment>
     )
 }
 

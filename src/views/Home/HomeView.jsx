@@ -1,10 +1,14 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function HomeView() {
 
     return (
-        <Header homeView={true}/>
+        <Fragment>
+            <Header homeView={true} />
+            <Footer />
+        </Fragment>
     )
 }
 
