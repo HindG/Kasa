@@ -1,21 +1,20 @@
-.thumb {
-    background: linear-gradient(180deg, #FF6060 6%, rgba(0, 0, 0, 0.75) 100%);
-    border-radius: 10px;
-    position: relative;
-    width: 340px;
-    height: 340px;
-    margin: 50px;
-}
-
-.thumb--title__container {
-    width: 100px;
-}
-
 .thumb--title {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     font-family: 'Montserrat';
     font-size: 18px;
     color: #FFFFFF;
     position: relative;
     top: 280px;
     left: 20px;
+    width: 150px;
+    height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.thumb--link {
+    text-decoration: none;
 }
