@@ -1,0 +1,41 @@
+.accomodation--header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 100px;
+    justify-content: space-between;
+}
+
+.accomodation--text {
+    font-family: 'Montserrat';
+    line-height: 40px;
+    color: #FF6060;
+    margin: 0;
+}
+
+.accomodation--title {
+    font-size: 36px;
+}
+
+.accomodation--location {
+    font-size: 18px;
+}
+
+.accomodation--host__container {
+    display: flex;
+    align-items: center;
+}
+
+.accomodation--host__name {
+    font-size: 18px;
+    width: 90px;
+    line-height: 25px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.accomodation--host__picture {
+    width: 64px;
+    height: 64px;
+    background: #C4C4C4;
+    border-radius: 100px;
+}
