@@ -1,4 +1,4 @@
-.accomodation--header {
+.accomodation--flex {
     display: flex;
     flex-direction: row;
     margin: 0 100px;
@@ -20,7 +20,7 @@
     font-size: 18px;
 }
 
-.accomodation--flex__container {
+.accomodation--host__container {
     display: flex;
     align-items: center;
 }
@@ -41,7 +41,7 @@
 }
 
 .accomodation--tags__container {
-    margin: 20px 100px 24px;
+    margin: 20px 0 24px;
     display: flex;
     flex-direction: row;
 }
