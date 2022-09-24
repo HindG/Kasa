@@ -1,15 +1,15 @@
 import React, { Fragment } from "react"
-import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
-function HomeView() {
+function AccomodationPage() {
 
     return (
         <Fragment>
-            <Header homeView={true} />
+            <Header />
             <Footer />
         </Fragment>
     )
 }
 
-export default HomeView;
+export default AccomodationPage;
