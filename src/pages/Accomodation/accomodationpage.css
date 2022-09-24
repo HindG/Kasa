@@ -39,3 +39,9 @@
     background: #C4C4C4;
     border-radius: 100px;
 }
+
+.accomodation--tags__container {
+    margin: 20px 100px 24px;
+    display: flex;
+    flex-direction: row;
+}

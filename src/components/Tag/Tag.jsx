@@ -4,10 +4,10 @@ import './tag.css'
 class Tag extends React.Component {
 
     render() {
-        const { tagName } = this.props;
+        const { tagTitle } = this.props;
         return (
             <div className="tag">
-                {tagName}
+                {tagTitle}
             </div>
         )
     }
