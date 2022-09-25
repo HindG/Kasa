@@ -1,0 +1,41 @@
+.dropdown--container {
+    position: relative;
+    width: 48%;
+}
+
+.feature--text {
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.dropdown--title {
+    background: #FF6060;
+    border-radius: 10px;
+    height: 20px;
+    color: #ffffff;
+    padding: 13px 0 13px 20px;
+    position: relative;
+    z-index: 99;
+}
+
+.dropdown--right {
+    margin-left: 50px;
+}
+
+.dropdown--right {
+    margin-left: 50px;
+}
+
+.dropdown--content {
+    background: #F7F7F7;
+    border-radius: 10px;
+    color: #FF6060;
+    padding: 40px 12px 53px 20px;
+    position: absolute;
+    top: 36px;
+    width: 95%;
+}
+
+.dropdown--values {
+    font-size: 24px;
+}

@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react"
 import { useParams, Navigate } from "react-router-dom";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Rating from "../../components/Rating/Rating";
@@ -46,6 +47,10 @@ function AccomodationPage() {
                             }
                         </div>
                         <Rating starsNumber={currentAccomodation.rating} />
+                    </div>
+                    <div className="accomodation--flex">
+                        <Dropdown paragraph={currentAccomodation.description} title="Description"/>
+                        <Dropdown equipments={currentAccomodation.equipments} title="Équipements"/>
                     </div>
                 </Fragment>
             }
