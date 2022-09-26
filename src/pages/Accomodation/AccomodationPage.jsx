@@ -43,7 +43,7 @@ function AccomodationPage() {
                     </div>
                     <div className="accomodation--flex">
                         <div className="accomodation--tags__container">
-                            {currentAccomodation.tags.map((tag) => <Tag tagTitle={tag} />)
+                            {currentAccomodation.tags.map((tag, index) => <Tag key={index} tagTitle={tag} />)
                             }
                         </div>
                         <Rating starsNumber={currentAccomodation.rating} />

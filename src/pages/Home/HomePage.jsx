@@ -25,7 +25,7 @@ function HomePage() {
             </div>
             {accomodationsData &&
                 <div className="accomodation--container">
-                 {accomodationsData.map((accomodation) => <Thumb accomodationData={accomodation} />)}
+                 {accomodationsData.map((accomodation, index) => <Thumb key={index} accomodationData={accomodation} />)}
                 </div>
             }
             <Footer />

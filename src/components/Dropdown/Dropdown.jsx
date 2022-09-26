@@ -16,7 +16,7 @@ class Dropdown extends React.Component {
                     {paragraph ?
                         paragraph
                         :
-                        equipments && equipments.map((equipement) => <div>{equipement}</div>)
+                        equipments && equipments.map((equipement, index) => <div key={index}>{equipement}</div>)
                     }
                 </div>
             </div>
