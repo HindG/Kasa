@@ -18,3 +18,31 @@
 .thumb--link {
     text-decoration: none;
 }
+
+.thumb--picture {
+    background-size: "cover";
+    position: "relative";
+    width: 340px;
+    height: 340px;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .thumb--picture {
+        width: 335px;
+        height: 255px;
+    }
+
+    .thumb--title {
+        top: 195px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .thumb--picture {
+        width: 280px;
+        height: 255px;
+        margin: 10px 0;
+    }
+}

@@ -5,6 +5,7 @@
     margin: 0 100px 50px;
     padding: 25px;
     border-radius: 25px;
+    justify-content: center;
 }
 
 .banner--container {
@@ -21,11 +22,77 @@
     line-height: 68px;
     color: #FFFFFF;
     top: 35%;
-    left: 26%;
+    left: 25%;
+    width: 60%;
+    text-align: left;
 }
 
 .banner--img {
     border-radius: 25px;
     filter: brightness(60%);
     width: calc(100% - 200px);
+}
+
+@media screen and (max-width: 1200px) {
+    .banner--title {
+        top: 26%;
+        font-size: 30px
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner--title {
+        top: 35%;
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .banner--img {
+        width: calc(100% - 40px);
+    }
+
+    .accomodation--container {
+        margin: 0 20px 50px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .banner--title {
+        top: 27%;
+        font-size: 24px;
+        line-height: 24px;
+        left: 12%;
+        width: 78%;
+    }
+
+    .banner--img {
+        height: 111px
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .banner--container {
+        margin: 20px 0 22px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .accomodation--container {
+        background-color: #FFFFFF;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .banner--img {
+        width: 1440px;
+    }
+
+    .accomodation--container {
+        width: 1440px;
+        margin: auto;
+    }
+
 }

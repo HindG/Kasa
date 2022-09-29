@@ -50,14 +50,3 @@
     top: 16px;
     right: 19px;
 }
-
-.banner--container {
-    text-align: center;
-    margin: 20px 0 43px 0;
-}
-
-.banner--img {
-    border-radius: 25px;
-    filter: brightness(60%);
-    width: calc(100% - 200px);
-}
