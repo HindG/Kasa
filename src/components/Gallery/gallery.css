@@ -1,0 +1,38 @@
+.gallery--container {
+    position: relative;
+}
+
+.gallery--previous {
+    position: absolute;
+    left: 130px;
+    height: 80px;
+    top: 150px;
+}
+
+.gallery--next {
+    position: absolute;
+    right: 130px;
+    height: 80px;
+    top: 150px;
+}
+
+.gallery--index {
+    position: absolute;
+    left: 49%;
+    bottom: 55px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.gallery--picture {
+    width: calc(100% - 200px);
+    height: 415px;
+    object-fit: cover;
+    margin: 0 100px 30px;
+    border-radius: 25px;
+}

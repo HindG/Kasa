@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Rating from "../../components/Rating/Rating";
 import Tag from "../../components/Tag/Tag";
+import Gallery from "../../components/Gallery/Gallery";
 import "./accomodationpage.css"
 
 function AccomodationPage() {
@@ -30,6 +31,7 @@ function AccomodationPage() {
             <Header />
             {currentAccomodation &&
                 <Fragment>
+                    <Gallery pictures={currentAccomodation.pictures}/>
                     <div className="accomodation--flex">
                         <div>
                             <h3 className="accomodation--text accomodation--title">{currentAccomodation.title}</h3>
