@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react"
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -9,20 +9,21 @@ import "./accomodationpage.css"
 
 function AccomodationPage() {
     const id = useParams()
-    let [accomodationsData, setAccomodationsData] = useState(null)
+    const navigate = useNavigate();
     let [currentAccomodation, setCurrentAccomodation] = useState(null)
 
     useEffect(() => {
         fetch("/logements.json")
             .then(response => response.json())
-            .then(data => setAccomodationsData(data))
-    }, [])
-
-    useEffect(() => {
-        accomodationsData && accomodationsData.forEach(accomodation => {
-            (accomodation.id === id.id) ? setCurrentAccomodation(accomodation) : <Navigate to="/error" />
-        })
-    }, [accomodationsData, id.id])
+            .then(data => {
+                if (data.find((accomodation) => accomodation.id === id.id)) {
+                    const currentAccodomation = data.find((accomodation) => accomodation.id === id.id);
+                    setCurrentAccomodation(currentAccodomation);
+                } else {
+                    navigate("/error")
+                }
+            })
+    }, [navigate, id.id])
 
     console.log(currentAccomodation);
 
@@ -43,14 +44,14 @@ function AccomodationPage() {
                     </div>
                     <div className="accomodation--flex">
                         <div className="accomodation--tags__container">
-                            {currentAccomodation.tags.map((tag, index) => <Tag key={index} tagTitle={tag} />)
+                            {currentAccomodation.tags.map((tag, index) => <Tag key={index} index={index} tagTitle={tag} />)
                             }
                         </div>
                         <Rating starsNumber={currentAccomodation.rating} />
                     </div>
                     <div className="accomodation--flex">
-                        <Dropdown paragraph={currentAccomodation.description} title="Description"/>
-                        <Dropdown equipments={currentAccomodation.equipments} title="Équipements"/>
+                        <Dropdown paragraph={currentAccomodation.description} title="Description" />
+                        <Dropdown equipments={currentAccomodation.equipments} title="Équipements" />
                     </div>
                 </Fragment>
             }

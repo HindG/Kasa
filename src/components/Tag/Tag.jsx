@@ -4,9 +4,9 @@ import './tag.css'
 class Tag extends React.Component {
 
     render() {
-        const { tagTitle, key } = this.props;
+        const { tagTitle, index } = this.props;
         return (
-            <div key={key} className="tag">
+            <div key={index} className="tag">
                 {tagTitle}
             </div>
         )
