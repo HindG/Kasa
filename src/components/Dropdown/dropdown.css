@@ -1,6 +1,11 @@
 .dropdown--container {
     position: relative;
     width: 48%;
+    margin: 0 auto 31px;
+}
+
+.dropdown--container--values {
+    width: 65%;
 }
 
 .feature--text {
@@ -14,7 +19,6 @@
     height: 20px;
     color: #ffffff;
     padding: 13px 0 13px 20px;
-    position: relative;
     z-index: 99;
 }
 
@@ -30,12 +34,30 @@
     background: #F7F7F7;
     border-radius: 10px;
     color: #FF6060;
-    padding: 40px 12px 53px 20px;
-    position: absolute;
-    top: 36px;
-    width: 95%;
+    padding: 30px 20px;
+}
+
+.dropdown--title--values {
+    padding: 8px 0 20px 20px;
 }
 
 .dropdown--values {
     font-size: 24px;
+}
+
+.dropdown--arrow {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+}
+
+.banner--container {
+    text-align: center;
+    margin: 20px 0 43px 0;
+}
+
+.banner--img {
+    border-radius: 25px;
+    filter: brightness(60%);
+    width: calc(100% - 200px);
 }

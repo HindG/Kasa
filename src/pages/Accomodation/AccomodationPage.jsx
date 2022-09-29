@@ -25,8 +25,6 @@ function AccomodationPage() {
             })
     }, [navigate, id.id])
 
-    console.log(currentAccomodation);
-
     return (
         <Fragment>
             <Header />
