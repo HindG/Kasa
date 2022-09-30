@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Banner from "../../img/banner-about.png"
+import "./aboutpage.css"
 
 function AboutPage() {
     const fiabiliteDescription = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.";
@@ -14,7 +15,7 @@ function AboutPage() {
         <Fragment>
             <Header aboutView={true} />
             <div className="banner--container">
-                <img src={Banner} alt="Banner" className="banner--img" />
+                <img src={Banner} alt="Banner" className="banner--responsive--about_page" />
             </div>
             <Dropdown paragraph={fiabiliteDescription} title="Fiabilité" isValue={true} />
             <Dropdown paragraph={respectDescription} title="Respect" isValue={true} />
