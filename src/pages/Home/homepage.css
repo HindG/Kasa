@@ -71,12 +71,10 @@
         height: 111px
     }
 
-}
-
-@media screen and (max-width: 500px) {
     .banner--container {
         margin: 20px 0 22px 0;
     }
+
 }
 
 @media screen and (max-width: 425px) {
