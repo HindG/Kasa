@@ -31,23 +31,25 @@ function AccomodationPage() {
             <Header />
             {currentAccomodation &&
                 <Fragment>
-                    <Gallery pictures={currentAccomodation.pictures}/>
+                    <Gallery pictures={currentAccomodation.pictures} />
                     <div className="accomodation--flex">
-                        <div>
-                            <h3 className="accomodation--text accomodation--title">{currentAccomodation.title}</h3>
-                            <span className="accomodation--text accomodation--location">{currentAccomodation.location}</span>
+                        <div className="accomodation--header--responsive">
+                            <div>
+                                <h3 className="accomodation--text accomodation--title">{currentAccomodation.title}</h3>
+                                <span className="accomodation--text accomodation--location">{currentAccomodation.location}</span>
+                            </div>
+                            <div className="accomodation--tags__container">
+                                {currentAccomodation.tags.map((tag, index) => <Tag key={index} index={index} tagTitle={tag} />)
+                                }
+                            </div>
                         </div>
-                        <div className="accomodation--host__container">
-                            <div className="accomodation--text accomodation--host__name">{currentAccomodation.host.name}</div>
-                            <img src={currentAccomodation.host.picture} alt="Host" className="accomodation--host__picture" />
+                        <div className="accomodation--header--responsive accomodation--header--responsive_flex">
+                            <div className="accomodation--host__container">
+                                <div className="accomodation--text accomodation--host__name">{currentAccomodation.host.name}</div>
+                                <img src={currentAccomodation.host.picture} alt="Host" className="accomodation--host__picture" />
+                            </div>
+                            <Rating starsNumber={currentAccomodation.rating} />
                         </div>
-                    </div>
-                    <div className="accomodation--flex">
-                        <div className="accomodation--tags__container">
-                            {currentAccomodation.tags.map((tag, index) => <Tag key={index} index={index} tagTitle={tag} />)
-                            }
-                        </div>
-                        <Rating starsNumber={currentAccomodation.rating} />
                     </div>
                     <div className="accomodation--flex">
                         <Dropdown paragraph={currentAccomodation.description} title="Description" />
